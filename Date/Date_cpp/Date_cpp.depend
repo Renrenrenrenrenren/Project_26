@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1607864960 source:c:\users\user\documents\tasks\date\date_cpp\sourses\date.cpp
+	<string>
+	<iostream>
+
+1607856555 source:c:\users\user\documents\tasks\date\date_cpp\sourses\time.cpp
+	"Date.cpp"
+	<iostream>
+
+1607864960 c:\users\user\documents\tasks\date\date_cpp\sourses\date.cpp
+	<string>
+	<iostream>
+
+1607976525 source:c:\users\user\documents\tasks\date\date_cpp\src\date.cpp
+	"Date.h"
+
+1607892867 c:\users\user\documents\tasks\date\date_cpp\include\date.h
+	<string>
+	<iostream>
+
+1607896405 source:c:\users\user\documents\tasks\date\date_cpp\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<locale.h>
+	"Date.h"
+	"Time.h"
+
+1607876885 source:c:\users\user\documents\tasks\date\date_cpp\src\date2.cpp
+	"Date.h"
+
+1607976525 source:c:\users\user\documents\tasks\date\date_cpp\src\time.cpp
+	"Time.h"
+
+1607896256 c:\users\user\documents\tasks\date\date_cpp\include\time.h
+	<string>
+	<iostream>
+	"Date.h"
+

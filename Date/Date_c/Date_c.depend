@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1607975527 source:c:\users\user\documents\tasks\date\date_c\main.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"Date.h"
+	"Time.h"
+
+1607974901 c:\users\user\documents\tasks\date\date_c\date.h
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1607975725 c:\users\user\documents\tasks\date\date_c\time.h
+	"Date.h"
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1607974901 source:c:\users\user\documents\tasks\date\date_c\time.c
+	"Time.h"
+
+1607975001 source:c:\users\user\documents\tasks\date\date_c\date.c
+	"Date.h"
+
