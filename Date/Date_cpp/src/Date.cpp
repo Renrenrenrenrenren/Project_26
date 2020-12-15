@@ -305,7 +305,7 @@
         string s="";
         if (year == 0)
         {
-             s+="фактически в григорианском календаре 0-ого года нет, поєтому в этой программе 0-ой год = 1 год до н.э \n";
+             s+="The Gregorian calendar actually does not have a campaign, so this is actually the first year BC only a leap year \n";
         }
         if (day < 10)
         {
