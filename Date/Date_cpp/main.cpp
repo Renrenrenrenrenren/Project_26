@@ -15,12 +15,12 @@ void Output_Date(Date &date) //output date in console
     }
 void Input_Date(Date &date) //input date from console
     {
-        cout<<"доба: ";
+        cout<<"day: ";
         int d, m, y;
         cin>>d;
-        cout<<"мiсяць: ";
+        cout<<"month: ";
         cin>>m;
-        cout<<"рiк: ";
+        cout<<"year: ";
         cin>>y;
         date.SetDate(d,m,y);
     }
@@ -28,18 +28,18 @@ void Input_DateFromTextFile(Date &date) //input date from file
     {
         ifstream fin;
         string Name;
-        cout<<"Введите имя файла для ввода даты: ";
+        cout<<"enter input date name: ";
         cin>>Name;
         fin.open(Name);
         if (!fin.is_open())
         {
-            cout << "ошибка открытия файла для ввода даты";
+            cout << "error opening input date file";
             exit(0);
         }
         else
         {
             int sh = 0, d, m, y;
-            cout << "В файле введено значение дня, месяца, года, каждое значение с новов стоки, в указаном порядке без перехода на новый рядок в конце" << endl;
+            cout << "entered value of the day, month, year, for example\n31.12.2020" << endl;
             while (!fin.eof())
             {
                 sh++;
@@ -66,13 +66,13 @@ void Input_DateFromTextFile(Date &date) //input date from file
 void Output_DateToFile( Date &date) //output date to file
     {
         string Name;
-        cout<<"Введите имя файла для вывода даты: ";
+        cout<<"enter output date name: ";
         cin>>Name;
         ofstream fout;
         fout.open(Name);
         if (!fout.is_open())
         {
-            cout << "ошибка открытия файла DateOutToFIle" << endl;
+            cout << "errorr opening output date file" << endl;
         }
         else
         {
@@ -87,18 +87,18 @@ void Input_TimeFromTextFile(Time &time) //input time from file
     {
         ifstream fin;
         string Name;
-        cout<<"Введите имя файла для ввода времени: ";
+        cout<<"enter input time file name: ";
         cin>>Name;
         fin.open(Name);
         if (!fin.is_open())
         {
-            cout << "ошибка открытия файла для ввода времени";
+            cout << "error opening input time file";
             exit(0);
         }
         else
         {
             int sh = 0, d, h, m, s;
-            cout << "В файле введено значение дня, часа, минуты, секунды, каждое значение с новов стоки, в указаном порядке без перехода на новый рядок в конце" << endl;
+            cout << "entered values day, hours, minutes, seconds, for example\n111 23 59 59" << endl;
             while (!fin.eof())
             {
                 sh++;
@@ -133,7 +133,7 @@ void Output_TimeToFile(Time &time) //output time to file
         fout.open(Name);
         if (!fout.is_open())
         {
-            cout << "ошибка открытия файла для вывода времени" << endl;
+            cout << "error opening output date file" << endl;
         }
         else
         {
@@ -144,14 +144,14 @@ void Output_TimeToFile(Time &time) //output time to file
     }
 void Input_Time(Time &time) //input time from console
 {
-    cout<<"доба: ";
+    cout<<"day: ";
     int d, h, m, s;
     cin>>d;
-    cout<<"година: ";
+    cout<<"hour: ";
     cin>>h;
-    cout<<"хвилина: ";
+    cout<<"minute: ";
     cin>>m;
-    cout<<"секунда: ";
+    cout<<"second: ";
     cin>>s;
     time.SetTime(d, h, m, s);
 }
