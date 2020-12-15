@@ -24,7 +24,7 @@ void SetTimeFromFile (struct tm* aTm)
     int d, h, m, s;
     if (f==NULL)
     {
-        printf("îøèáêà îòêðûòèÿ ôàéëà äëÿ ÷òåíèÿ");
+        printf("incorect input file name");
     }
     else
     {
@@ -57,7 +57,7 @@ void SetTime(struct tm* a, int day, int hour, int minute, int second) //sets a t
 		if (second >= 60 || second < 0)
         //if seconds are more than 60 or less than zero
 		{
-		    printf ("ÂIncorrect time value");
+		    printf ("Ã‚Incorrect time value");
 			exit(0);
 		}
 		if (day < 0)
